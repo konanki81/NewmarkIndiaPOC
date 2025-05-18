@@ -1,0 +1,6 @@
+@NewmarkIndiaWebApi_HostAddress = http://localhost:5289
+
+GET {{NewmarkIndiaWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
