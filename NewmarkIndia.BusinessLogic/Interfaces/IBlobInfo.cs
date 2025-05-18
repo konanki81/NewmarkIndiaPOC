@@ -9,6 +9,6 @@ namespace NewmarkIndia.BusinessLogic.Interfaces
 {
     public interface IBlobInfo
     {
-        Task<IEnumerable<BlobReponse>> GetBlobInfoAsync();
+        Task<IEnumerable<BlobReponse>?> GetBlobInfoAsync();
     }
 }
