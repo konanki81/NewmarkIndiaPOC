@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Blobinfo } from '../classes/blobinfo';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +12,8 @@ private apiUrl = 'http://localhost:5289/api/NewmarkIndiaBlob/GetBlobResponse/v1'
 
   constructor(private http: HttpClient) { }
 
-  getBlobData(): Observable<any> {
-    return this.http.get(this.apiUrl);
+  getBlobData(): Observable<Blobinfo[]> {
+    return this.http.get<Blobinfo[]>(this.apiUrl);
   }
 
 }
